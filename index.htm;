@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakshay Jain | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e2e8f0;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #38bdf8;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background: rgba(30,41,59,0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #38bdf8; }
+    section {
+      padding: 60px 10%;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+    }
+    .tag {
+      display: inline-block;
+      margin: 5px 5px 0 0;
+      padding: 5px 10px;
+      background: #0ea5e9;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      margin-top: 40px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lakshay Jain</h1>
+  <p>CS Student • Builder • Future Founder</p>
+  <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a computer science student focused on building real-world solutions through code. 
+    I'm deeply interested in startups, problem-solving, and creating impactful products.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Shuttle Tracker</h3>
+      <p>Real-time shuttle tracking system to improve transport efficiency.</p>
+      <div class="tag">Python</div>
+      <div class="tag">Web</div>
+    </div>
+
+    <div class="card">
+      <h3>Future Startup Idea</h3>
+      <p>Working on innovative solutions in fintech and automation.</p>
+      <div class="tag">Startup</div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Python</div>
+    <div class="card">C Programming</div>
+    <div class="card">Git & GitHub</div>
+    <div class="card">Problem Solving</div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements & Courses</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Online Courses</h3>
+      <p>Completed multiple courses on programming and development.</p>
+    </div>
+    <div class="card">
+      <h3>Academic Excellence</h3>
+      <p>Strong performance in computer science subjects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>GitHub: github.com/yourusername</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+</section>
+
+<footer>
+  <p>© 2026 Lakshay Jain. Built with passion.</p>
+</footer>
+
+</body>
+</html>
